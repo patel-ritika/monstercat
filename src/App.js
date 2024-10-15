@@ -15,6 +15,11 @@ import Instinct from './components/music/Instinct';
 import Uncaged from './components/music/Uncaged';
 import Silk from './components/music/Silk';
 import Artists from './components/Artist';
+import AboutMonstercat from './components/about/AboutMonstercat';
+import Diversity from './components/about/Diversity';
+import Ethics from './components/about/Ethics';
+import Environment from './components/about/Environmental'
+import Contact from './components/about/Contact';
 
 
 function App() {
@@ -93,6 +98,63 @@ function App() {
                                     </>
                                    }
                                 />
+
+<Route
+					exact
+					path="/aboutmonstercat"
+					element={
+						<>
+							<Header />
+							<AboutMonstercat />
+							<Footer />{" "}
+						</>
+					}
+				/>{" "}
+				<Route
+					exact
+					path="/diversity"
+					element={
+						<>
+							<Header />
+							<Diversity />
+							<Footer />{" "}
+						</>
+					}
+				/>{" "}
+				<Route
+					exact
+					path="/ethics"
+					element={
+						<>
+							<Header />
+							<Ethics />
+							<Footer />{" "}
+						</>
+					}
+				/>{" "}
+				<Route
+					exact
+					path="/environment"
+					element={
+						<>
+							<Header />
+							<Environment />
+							<Footer />{" "}
+						</>
+					}
+				/>{" "}
+				<Route
+					exact
+					path="/contact"
+					element={
+						<>
+							<Header />
+							<Contact />
+							<Footer />{" "}
+						</>
+					}
+				/>
+        
         </Routes>
         </BrowserRouter>
 
