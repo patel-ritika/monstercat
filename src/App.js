@@ -12,6 +12,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Ourmusic from './components/music/Ourmusic';
 import Instinct from './components/music/Instinct';
+import Uncaged from './components/music/Uncaged';
 
 function App() {
   return (
@@ -49,6 +50,18 @@ function App() {
                                   <>
                                   <Header/>
                                   <Instinct/>
+                                  <Footer/>{" "}
+                                  </>
+                                 }
+                                 />
+
+                              <Route
+                                 exact
+                                 path="/uncaged"
+                                 element={
+                                  <>
+                                  <Header/>
+                                  <Uncaged/>
                                   <Footer/>{" "}
                                   </>
                                  }
