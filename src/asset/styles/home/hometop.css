@@ -1,0 +1,122 @@
+.home-top {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .loading-line {
+    position: absolute;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .loading-line.active {
+    opacity: 1;
+  }
+  
+  .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -1; /* Make sure content appears above the background image */
+  }
+  
+.content h1{
+  font-family: "Londrina Sketch", sans-serif;
+}
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    object-fit: cover; /* Cover the entire screen while maintaining aspect ratio */
+    filter: blur(5px); /* Blur effect */
+    z-index: -2; /* Send background behind the content */
+  }
+  
+  .small-image {
+    padding-top: 50px;
+    padding-right: 500px;
+    width: 250px; /* Adjust as needed */
+    margin-bottom: -150px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    padding-left: 50px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    padding-left: 60px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: lightseagreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:white;
+    color: black;
+  }
+  
+ /* Media Query for screens up to 425px width */
+@media (max-width: 425px) {
+    .background-image {
+      width: 100vw; /* Full width on smaller screens */
+      height: 100vh;
+    }
+  
+    .small-image {
+      width: 150px; /* Smaller size for small screens */
+      margin-bottom: 10px; /* Add some space below the image */
+      padding-right: 0; /* No padding on small screens */
+      align-self: center; /* Center the image */
+    }
+  
+    .content {
+      justify-content: flex-start; /* Align content from the top */
+      padding-top: 20px; /* Add some padding from the top */
+    }
+  
+    h1 {
+      font-size: 1.8rem; /* Smaller heading */
+      padding-left: 0; /* No padding on small screens */
+    }
+  
+    h2 {
+      font-size: 1.2rem; /* Smaller sub-heading */
+      padding-left: 0;
+      margin-bottom: 15px; /* Adjust margin for small screens */
+    }
+  
+    button {
+      padding: 8px 15px; /* Smaller buttons */
+      font-size: 0.8rem; /* Smaller font */
+    }
+  
+    .buttons {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+      gap: 5px; /* Smaller gap between buttons */
+    }
+  }
