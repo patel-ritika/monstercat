@@ -14,6 +14,7 @@ import Ourmusic from './components/music/Ourmusic';
 import Instinct from './components/music/Instinct';
 import Uncaged from './components/music/Uncaged';
 import Silk from './components/music/Silk';
+import Artists from './components/Artist';
 
 
 function App() {
@@ -80,6 +81,18 @@ function App() {
                                     </>
                                   }
                                   />
+
+                                <Route
+                                   exact
+                                   path="/artists"
+                                   element={
+                                    <>
+                                    <Header/>
+                                    <Artists/>
+                                    <Footer/>{" "}
+                                    </>
+                                   }
+                                />
         </Routes>
         </BrowserRouter>
 
