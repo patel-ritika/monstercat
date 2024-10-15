@@ -13,6 +13,8 @@ import Home from './components/Home';
 import Ourmusic from './components/music/Ourmusic';
 import Instinct from './components/music/Instinct';
 import Uncaged from './components/music/Uncaged';
+import Silk from './components/music/Silk';
+
 
 function App() {
   return (
@@ -66,6 +68,18 @@ function App() {
                                   </>
                                  }
                                  />
+
+                                <Route
+                                  exact
+                                  path="/silk"
+                                  element={
+                                    <>
+                                    <Header/>
+                                    <Silk/>
+                                    <Footer/>{" "}
+                                    </>
+                                  }
+                                  />
         </Routes>
         </BrowserRouter>
 
