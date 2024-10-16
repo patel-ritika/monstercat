@@ -22,6 +22,7 @@ import Environment from './components/about/Environmental'
 import Contact from './components/about/Contact';
 import NewsPage from './components/NewsPage';
 import EventsPage from './components/EventsPage';
+import UpcomingEventsPage from './components/UpcomingEventsPage';
 
 
 function App() {
@@ -175,6 +176,17 @@ function App() {
 						<>
 							<Header />
 							<EventsPage />
+							<Footer />{" "}
+						</>
+					}
+				/>
+        <Route
+					exact
+					path="/upcomming-events"
+					element={
+						<>
+							<Header />
+							<UpcomingEventsPage/>
 							<Footer />{" "}
 						</>
 					}
