@@ -20,6 +20,7 @@ import Diversity from './components/about/Diversity';
 import Ethics from './components/about/Ethics';
 import Environment from './components/about/Environmental'
 import Contact from './components/about/Contact';
+import NewsPage from './components/NewsPage';
 
 
 function App() {
@@ -155,6 +156,18 @@ function App() {
 					}
 				/>
         
+        <Route
+					exact
+					path="/news"
+					element={
+						<>
+							<Header />
+							<NewsPage />
+							<Footer />{" "}
+						</>
+					}
+				/>
+
         </Routes>
         </BrowserRouter>
 
