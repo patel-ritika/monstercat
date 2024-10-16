@@ -23,7 +23,7 @@ import Contact from './components/about/Contact';
 import NewsPage from './components/NewsPage';
 import EventsPage from './components/EventsPage';
 import UpcomingEventsPage from './components/UpcomingEventsPage';
-
+import GoldPage from './components/GoldPage';
 
 function App() {
   return (
@@ -187,6 +187,17 @@ function App() {
 						<>
 							<Header />
 							<UpcomingEventsPage/>
+							<Footer />{" "}
+						</>
+					}
+				/>
+				<Route
+					exact
+					path="/gold"
+					element={
+						<>
+							<Header />
+							<GoldPage />
 							<Footer />{" "}
 						</>
 					}
