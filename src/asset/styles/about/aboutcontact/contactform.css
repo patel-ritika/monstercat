@@ -1,0 +1,192 @@
+/* Container Styles */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 15rem;
+    /* Apply the given margin */
+    padding: 2rem;
+    /* Light background color for better contrast */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    gap: 2rem;
+    /* Space between the two sides */
+  }
+  
+  /* Left Section Styles */
+  .contact-left {
+    width: 30%;
+    padding: 1rem;
+  }
+  
+  .contact-left h2,
+  .contact-left h3,
+  .contact-left p {
+    margin: 1rem 0;
+  }
+  
+  .contact-left a {
+    color: gray;
+    /* Greenish link color */
+    text-decoration: none;
+  }
+  
+  .contact-left a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Right Section Styles */
+  .contact-right {
+    width: 70%;
+  }
+  
+  .form-container {
+    background-color: transparent;
+    border: 1px solid #dddddd;
+    /* Border for the form */
+    padding: 2rem;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    padding: 0.3rem 0;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    margin-top: 0.3rem;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    font-size: 1rem;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: grey;
+    /* Green border on focus */
+  }
+  
+  .submit-btn {
+    background-color: white;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  /* Responsive Design for Tablets and Smaller Screens */
+  @media (max-width: 1024px) {
+    .contact-container {
+      flex-direction: column;
+      margin: 0.5rem;
+      padding: 1.5rem;
+      /* Adjusted padding */
+    }
+  
+    .contact-left,
+    .contact-right {
+      width: 100%;
+      padding: 0;
+      /* Full width for both sections */
+    }
+  
+    .contact-left h2 {
+      font-size: 1.5rem;
+      margin-bottom: 4rem;
+    }
+  
+    .form-container {
+      margin-top: 1.5rem;
+    }
+  
+    .submit-btn {
+      width: 50%;
+      /* Increase button width */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      margin: 1.5rem;
+      padding: 1.5rem;
+    }
+  
+    .form-container {
+      padding: 1.5rem;
+      /* Reduced padding for smaller screens */
+    }
+  
+    input,
+    textarea {
+      font-size: 0.9rem;
+      /* Slightly smaller font size */
+      padding: 0.7rem;
+      /* Adjusted padding */
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+      /* Adjust button size */
+      padding: 0.75rem;
+      /* Adjusted button padding */
+      width: 60%;
+      /* Further increase button width */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-container {
+      margin: 1rem 0.5rem;
+      padding: 1rem;
+      flex-direction: column;
+    }
+  
+    .form-container {
+      padding: 1rem;
+      /* Further reduce padding */
+    }
+  
+    label {
+      font-size: 0.9rem;
+      /* Adjust label font size */
+    }
+  
+    input,
+    textarea {
+      font-size: 0.85rem;
+      /* Further reduce input and textarea font size */
+      padding: 0.6rem;
+      /* Reduced padding */
+    }
+  
+    .submit-btn {
+      font-size: 0.9rem;
+      /* Adjust button size */
+      width: 80%;
+      /* Full width button for better tap target */
+      padding: 0.7rem;
+      /* Adjusted button padding */
+    }
+  }

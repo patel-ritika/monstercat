@@ -1,0 +1,175 @@
+/* Base Styles */
+.contact-demo-submission-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../../../images//about//aboutmonstercat/grid4.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-background-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5rem 15rem;
+    background: rgba(10, 10, 10, 0.5);
+    /* Optional background overlay for readability */
+  }
+  
+  /* Title Styles */
+  .contact-title {
+    font-size: 5rem;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+  
+  /* Content Section */
+  .contact-content-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+  }
+  
+  /* Left and Right Side Styles */
+  .contact-left-side,
+  .contact-right-side {
+    color: #ffffff;
+    min-width: 300px;
+    /* Ensure minimum width */
+  }
+  
+  .contact-left-side {
+    width: 40%;
+  }
+  
+  .contact-right-side {
+    width: 30%;
+  }
+  
+  .contact-left-side h2,
+  .contact-right-side h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Right Side Paragraph Styles */
+  .contact-right-side p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Demo Categories List */
+  .contact-demo-categories-contact {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-demo-categories-contact li {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-demo-categories-contact li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Responsive Design for Tablets and Smaller Devices */
+  @media (max-width: 1024px) {
+    .contact-background-overlay {
+      padding: 3rem;
+      justify-content: flex-start;
+    }
+  
+    .contact-title {
+      font-size: 4rem;
+      text-align: left;
+    }
+  
+    .contact-left-side,
+    .contact-right-side {
+      width: 100%;
+      /* Full width for both sections */
+      text-align: left;
+    }
+  
+    .contact-content-section {
+      flex-direction: column;
+      /* Stack content vertically */
+      align-items: center;
+      padding: 2rem 0;
+    }
+  }
+  
+  /* Responsive Design for Mobile Devices */
+  @media (max-width: 768px) {
+    .contact-background-overlay {
+      padding: 2rem;
+    }
+  
+    .contact-title {
+      font-size: 3rem;
+      text-align: center;
+    }
+  
+    .contact-left-side h2,
+    .contact-right-side h3 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-right-side p {
+      font-size: 0.9rem;
+    }
+  
+    .contact-demo-categories-contact li {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+  
+    .contact-background-overlay {
+      padding: 1rem;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  
+    .contact-title {
+      font-size: 2.5rem;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+  
+    .contact-left-side h2,
+    .contact-right-side h3 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-right-side p {
+      font-size: 0.85rem;
+    }
+  
+    .contact-demo-categories-contact li {
+      padding: 0.4rem;
+      font-size: 0.8rem;
+    }
+  }

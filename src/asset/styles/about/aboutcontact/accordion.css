@@ -1,0 +1,104 @@
+.accordion-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #111111;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .accordion-container h1 {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .accordion-item {
+    border: 1px solid white;
+  }
+  
+  .accordion-title {
+    padding: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-title:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .accordion-icon {
+    font-size: 1.5rem;
+  }
+  
+  .accordion-content {
+    padding: 1rem;
+    background-color: #222;
+  }
+  
+  @media (max-width: 768px) {
+    .accordion-container {
+      width: 95%;
+      /* Increase width for smaller screens */
+    }
+  
+    .accordion-container h1 {
+      font-size: 2rem;
+      /* Adjust title font size */
+      padding: 1rem;
+      /* Reduce padding */
+    }
+  
+    .accordion-title {
+      padding: 1rem;
+      /* Adjust padding for smaller screens */
+      font-size: 1.2rem;
+      /* Smaller font size for titles */
+    }
+  
+    .accordion-icon {
+      font-size: 1.2rem;
+      /* Adjust icon size */
+    }
+  
+    .accordion-content {
+      font-size: 0.9rem;
+      /* Adjust content font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .accordion-container {
+      width: 100%;
+      padding: 1rem;
+      /* Full width for mobile screens */
+    }
+  
+    .accordion-container h1 {
+      font-size: 1.8rem;
+      /* Adjust title font size for mobile */
+      padding: 0.5rem;
+      margin-bottom: 3rem;
+      text-align: left;
+      /* Reduce padding */
+    }
+  
+    .accordion-title {
+      padding: 0.8rem;
+      /* Adjust padding */
+      font-size: 1rem;
+      /* Smaller font size */
+    }
+  
+    .accordion-icon {
+      font-size: 1rem;
+      /* Smaller icon size */
+    }
+  
+    .accordion-content {
+      font-size: 0.8rem;
+      /* Smaller font size */
+    }
+  }
