@@ -21,6 +21,7 @@ import Ethics from './components/about/Ethics';
 import Environment from './components/about/Environmental'
 import Contact from './components/about/Contact';
 import NewsPage from './components/NewsPage';
+import EventsPage from './components/EventsPage';
 
 
 function App() {
@@ -163,6 +164,17 @@ function App() {
 						<>
 							<Header />
 							<NewsPage />
+							<Footer />{" "}
+						</>
+					}
+				/>
+        <Route
+					exact
+					path="/events"
+					element={
+						<>
+							<Header />
+							<EventsPage />
 							<Footer />{" "}
 						</>
 					}

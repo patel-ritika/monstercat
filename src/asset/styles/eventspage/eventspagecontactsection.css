@@ -1,0 +1,59 @@
+.events-page-contact-section-container {
+    border: 1px solid #fff;
+    padding: 6rem 5rem;
+    max-width: 1450px;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    background-image: url('../../images//artists/artistcenter/big.webp');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+}
+
+.events-page-contact-section-container h1 {
+    font-size: 40px;
+    width: 80%;
+    color: white;
+}
+
+.events-page-contact-section-container p {
+    font-size: 18px;
+    color: white;
+    text-transform: none;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.events-page-contact-section-container button {
+    width: fit-content;
+    background-color: black;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 40px;
+}
+
+.events-page-contact-section-container button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .events-page-contact-section-container {
+        background: none;
+        padding: 2rem;
+        margin: 3rem 1rem;
+        gap: 2rem;
+    }
+
+    .events-page-contact-section-container h1 {
+        font-size: 20px;
+    }
+}
