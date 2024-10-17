@@ -26,6 +26,7 @@ import UpcomingEventsPage from './components/UpcomingEventsPage';
 import GoldPage from './components/GoldPage';
 import Partnership from './components/Partnership';
 import Press from './components/press/PressTop';
+import Lost_civilaization from './components/Lost_civilaization';
 
 function App() {
   return (
@@ -228,6 +229,17 @@ function App() {
 					}
 				/>
 
+<Route
+					exact
+					path="/lostcivilaization"
+					element={
+						<>
+							<Header />
+							<Lost_civilaization />
+							<Footer />{" "}
+						</>
+					}
+				/>
         </Routes>
         </BrowserRouter>
 
