@@ -25,6 +25,7 @@ import EventsPage from './components/EventsPage';
 import UpcomingEventsPage from './components/UpcomingEventsPage';
 import GoldPage from './components/GoldPage';
 import Partnership from './components/Partnership';
+import Press from './components/press/PressTop';
 
 function App() {
   return (
@@ -211,6 +212,17 @@ function App() {
 						<>
 							<Header />
 							<Partnership />
+							<Footer />{" "}
+						</>
+					}
+				/>{" "}
+				<Route
+					exact
+					path="/press"
+					element={
+						<>
+							<Header />
+							<Press />
 							<Footer />{" "}
 						</>
 					}

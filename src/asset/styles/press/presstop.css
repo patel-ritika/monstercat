@@ -1,0 +1,193 @@
+.press-page-bottom-section-container {
+    max-width: 1450px;
+    margin: 2rem auto;
+    background-color: black;
+  }
+  
+  .press-page-bottom-section-title h1 {
+    font-size: 60px;
+    background-color: white;
+  }
+  
+  .press-page-bottom-section-header-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+  
+
+
+  .header-link.active h4 {
+    color: #fff;
+  }
+  
+  .press-page-bottom-section-header-body-left-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .press-page-bottom-section-header-body-left-content h4 {
+    font-size: 20px;
+    color: #898888;
+    cursor: pointer;
+  }
+  
+  .press-page-bottom-section-header-body-right-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .press-page-bottom-section-header-body-search-button,
+  .press-page-bottom-section-header-body-desc-button,
+  .press-page-bottom-section-header-body-tags-button {
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .press-page-bottom-section-header-body-desc-button:hover,
+  .press-page-bottom-section-header-body-tags-button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .press-page-bottom-section-content {
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    margin: 3rem 0;
+  }
+  
+  .press-page-bottom-section-left-content {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+  }
+  
+  .press-page-bottom-section-right-content {
+    height: 400px;
+    width: 50%;
+    padding: 2rem 3rem;
+  }
+  
+  .press-page-bottom-section-right-content h1 {
+    font-size: 30px;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  .press-page-bottom-section-right-content-press-type-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0 0 2rem 0;
+  }
+  
+  .press-page-bottom-section-right-content-press-type-content span {
+    color: #898888;
+    text-transform: none;
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+  
+  .press-page-bottom-section-right-content p {
+    font-size: 18px;
+    text-transform: none;
+    font-weight: normal;
+    font-style: italic;
+    color: white;
+  }
+  
+  /* pagination css */
+  .press-page-bottom-section-pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .press-page-bottom-section-pagination-controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .press-page-bottom-section-pagination-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .press-page-bottom-section-pagination-controls span {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .press-page-bottom-section-container {
+      padding: 1rem;
+    }
+  
+    .press-page-bottom-section-title h1 {
+      font-size: 30px;
+    }
+  
+    .press-page-bottom-section-header-body {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+    }
+  
+    .press-page-bottom-section-header-body-left-content {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .press-page-bottom-section-header-body-left-content h4 {
+      font-size: 16px;
+    }
+  
+    .press-page-bottom-section-content {
+      flex-direction: column !important;
+      padding: 0;
+    }
+  
+    .press-page-bottom-section-left-content,
+    .press-page-bottom-section-right-content {
+      width: 100%;
+    }
+  
+    .press-page-bottom-section-right-content {
+      padding: 2rem 1rem;
+      height: auto;
+    }
+  
+    .press-page-bottom-section-right-content h1 {
+      font-size: 20px;
+    }
+  
+    .press-page-bottom-section-right-content p {
+      font-size: 16px;
+    }
+  }
