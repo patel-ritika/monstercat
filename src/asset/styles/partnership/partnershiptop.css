@@ -1,0 +1,236 @@
+/* Full-screen background image */
+.partnership-top {
+    background-image: url('../../images//partnership/bg.webp');
+    /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    width: 99vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .partnership-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  /* Content container */
+  .content {
+    width: 50%;
+    /* Semi-transparent background for better readability */
+    padding: 40px;
+    border-radius: 10px;
+    position: relative;
+    /* To bring it above the overlay */
+    z-index: 2;
+    /* Brings the content above the overlay */
+    color: #fff;
+  }
+  
+  /* Headings */
+  .content h1 {
+    font-size: 5rem;
+    color: transparent;
+    margin-bottom: 60px;
+    -webkit-text-stroke: white 1px;
+  }
+  
+  /* Paragraph */
+  .content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-transform: lowercase;
+    font-weight: 500;
+  }
+  
+  /* Buttons styling */
+  .buttons .btn {
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    color: black;
+    background: #fff;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+    font-weight: 800;
+  }
+  
+  /* Recent Collaborations Section */
+  .recent-collaborations {
+    margin: 3rem 10rem;
+    text-align: center;
+  }
+  
+  .recent-collaborations h2 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 1rem;
+  }
+  
+  .recent-collaborations p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-transform: lowercase;
+    font-style: italic;
+    color: black;
+  }
+  
+  /* Grid Container */
+  .collaborations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  
+  /* Individual Grid Item */
+  .collab-item {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+  }
+  
+  .collab-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Overlay Content */
+  .collab-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .collab-item .overlay p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .collab-item .read-more-btn {
+    padding: 10px 20px;
+    border: none;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+  }
+  
+  .collab-item:hover img {
+    transform: scale(1.1);
+    /* Zoom in effect on hover */
+  }
+  
+  .collab-item:hover .overlay {
+    opacity: 1;
+    /* Reveal overlay on hover */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .content {
+      width: 100%;
+      /* Adjust content width for tablets */
+    }
+  
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      /* Reduce spacing for headings */
+    }
+  
+    .content p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+  
+    .buttons .btn {
+      padding: 12px 24px;
+    }
+  
+    .recent-collaborations {
+      margin: 2rem 5rem;
+      /* Adjust margins for tablets */
+    }
+  
+    .collaborations-grid {
+      grid-template-columns: repeat(2, 1fr);
+      /* Two columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content {
+      width: 100%;
+      padding: 0;
+      text-align: left;
+      /* Adjust content width for small devices */
+    }
+  
+    .content h1 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      /* Further reduce spacing for headings */
+    }
+  
+    .content p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+  
+    .buttons .btn {
+      padding: 10px 20px;
+      margin: 5px;
+      /* Reduce margin between buttons */
+    }
+  
+    .recent-collaborations h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1.5rem;
+      /* Adjust heading size for small devices */
+    }
+  
+    .recent-collaborations p {
+      line-height: 2rem;
+    }
+  
+    .recent-collaborations {
+      margin: 1rem;
+      /* Minimal margins on mobile */
+    }
+  
+    .collaborations-grid {
+      grid-template-columns: 1fr;
+      /* Single column on small screens */
+    }
+  
+    .collab-item {
+      height: 230px;
+    }
+  }

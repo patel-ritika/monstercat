@@ -1,0 +1,164 @@
+/* Container for the entire component */
+.music-license-section {
+    text-align: center;
+    margin: 3rem 15rem;
+    background-color: black;
+  }
+  
+  /* Text Content Styling */
+  .text-content h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .text-content p {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    text-transform: lowercase;
+  }
+  
+  .email-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Container with Border */
+  .form-container {
+    border: 1px solid white;
+    padding: 2rem;
+  
+  }
+  
+  /* Form Layout */
+  .license-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Form Row */
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  /* Form Group */
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    color: white;
+    text-align: left;
+  }
+  
+  .form-group input {
+    padding: 0.75rem;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent input background */
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    /* Change background on focus */
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    padding: 0.75rem 1rem;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .music-license-section {
+      margin: 3rem 10rem;
+      /* Adjust margin for medium screens */
+    }
+  
+    .form-row {
+      gap: 1rem;
+    }
+  
+    .form-group input {
+      font-size: 0.9rem;
+      /* Slightly smaller font for input fields */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .music-license-section {
+      margin: 3rem 5rem;
+      /* Adjust margin for tablets */
+    }
+  
+    .form-row {
+      flex-direction: column;
+      gap: 1rem;
+      /* Stack fields vertically */
+    }
+  
+    .form-group input {
+      font-size: 0.85rem;
+      /* Smaller font for tablet screens */
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .music-license-section {
+      margin: 3rem 2rem;
+      /* Minimal margin for small screens */
+    }
+  
+    .text-content h1 {
+      font-size: 1.5rem;
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+      /* Smaller font size */
+    }
+  
+    .text-content p {
+      font-size: 1rem;
+      width: 100%;
+      /* Smaller paragraph font */
+    }
+  
+    .form-group input {
+      font-size: 0.8rem;
+      /* Smaller font for mobile screens */
+    }
+  
+    .submit-btn {
+      font-size: 0.9rem;
+    }
+  }
