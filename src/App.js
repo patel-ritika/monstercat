@@ -24,6 +24,7 @@ import NewsPage from './components/NewsPage';
 import EventsPage from './components/EventsPage';
 import UpcomingEventsPage from './components/UpcomingEventsPage';
 import GoldPage from './components/GoldPage';
+import Partnership from './components/Partnership';
 
 function App() {
   return (
@@ -198,6 +199,18 @@ function App() {
 						<>
 							<Header />
 							<GoldPage />
+							<Footer />{" "}
+						</>
+					}
+				/>
+
+<Route
+					exact
+					path="/partnership"
+					element={
+						<>
+							<Header />
+							<Partnership />
 							<Footer />{" "}
 						</>
 					}
